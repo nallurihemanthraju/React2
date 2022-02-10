@@ -16,7 +16,7 @@ const Todolist = ({Todos,deleteHandler,views,editHandler})=>{
                 <th>Edit / Delete</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody>    
             {
                Todos.map((todo,index)=>{
                    return(<tr key={index}>

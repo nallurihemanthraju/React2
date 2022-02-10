@@ -14,10 +14,10 @@ export class ContactDetails extends Component {
                                 </div>
                                 <div className="card-body">
                                     <ul class="list-group">
+                                        <li class="list-group-item">{this.props.details.userId}</li>
                                         <li class="list-group-item">{this.props.details.id}</li>
-                                        <li class="list-group-item">{this.props.details.name}</li>
-                                        <li class="list-group-item">{this.props.details.address.city}</li>
-                                        <li class="list-group-item">{this.props.details.email}</li>
+                                        <li class="list-group-item">{this.props.details.title}</li>
+                                        <li class="list-group-item">{this.props.details.completed}</li>
                                         {/* <li class="list-group-item">{this.props.details.dob.age}</li> */}
 
                                     </ul>

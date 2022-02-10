@@ -13,7 +13,7 @@ class ContactApp extends Component {
         this.setState({ selectedContact: contact })
     }
     componentDidMount() {
-        Axios.get("https://jsonplaceholder.typicode.com/users")
+        Axios.get("https://jsonplaceholder.typicode.com/todos")
             .then((response) => {
                 this.setState({ contacts: response.data })
             })

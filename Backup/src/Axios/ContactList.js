@@ -15,20 +15,20 @@ class ContactList extends Component {
                             <table className="table table-hover">
                                 <thead className="bg-dark text-white">
                                     <tr>
-                                        <th>Id</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Country</th>
+                                        <th>userId</th>
+                                        <th>id</th>
+                                        <th>title</th>
+                                        <th>completed</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {
                                         this.props.contacts.map((contact) => {
                                             return <tr key={contact.id} onClick={this.selectedContactHandler.bind(this, contact)}>
+                                                <td>{contact.userId}</td>
                                                 <td>{contact.id}</td>
-                                                <td>{contact.name}</td>
-                                                <td>{contact.email}</td>
-                                                <td>{contact.address.city}</td>
+                                                <td>{contact.title}</td>
+                                                <td>{contact.completed}</td>
                                             </tr>
                                         })
                                     }
