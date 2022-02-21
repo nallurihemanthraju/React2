@@ -1,21 +1,17 @@
-import React from "react";
-import {BrowserRouter ,Switch,Route} from "react-router-dom"
-import ContactApp from "./Contactapp/ContactApp"
-import Navbar from "./Contactapp/Navbar"
- let App = () => {
+import React, { Component } from 'react'
+import ComA from './States/Class/ComA'
+// import ComB from './States/Class/ComB'
+ class App extends Component {
+  render() {
+    return (
+      <div>
+            <h1>Hemanth</h1>
+            <ComA/>
+            {/* <ComB/> */}
 
-   return <React.Fragment>
+      </div>
+    )
+  }
+}
 
-   <BrowserRouter>
-
-   <Navbar/>
-
-   <Switch>
-   <Route path="/contact" component={ContactApp}/>
-   </Switch>
-   </BrowserRouter>
-   </React.Fragment>
- }
- 
- export default App;
- 
+export default App
