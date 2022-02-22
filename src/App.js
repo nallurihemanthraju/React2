@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
-import Hike from "./hike/Hike"
-import Login from "./Login/Login"
+import Form from './FormHandling/Form'
 class App extends Component {
   render() {
     return (
       <div>
-    <Hike/>
- 
-    <Login/>
+     <Form/>
       </div>
     )
   }
